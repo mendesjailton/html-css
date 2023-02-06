@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+body{
+    color: black;
+    background-color: #5499F0;
+}
+
+header{
+    width: 1000px;
+    height: 100px;
+    background-color: #5360ED;
+    margin: auto;
+    border: 5px solid #222761; /*width style color*/
+    padding: 0px 10px 25px 10px;
+    text-align: center;
+    box-shadow: 3px 3px 4px black;
+    border-radius: 5px;
+}
+
+nav{
+    width: 970px;
+    height: 5px;
+    margin: auto;
+    border: 5px solid #222761;
+    padding: 3px 10px 15px 10px; 
+    text-align: center;
+    background-color:#4680c7;
+    box-shadow: 3px 3px 4px black;
+    border-radius: 5px;
+}
+
+main{
+    width: 1010px;
+    height: 550px;
+    margin: 5px auto auto auto;
+    border: 5px solid #222761;
+    padding-left: 10px;
+    background-color: #5360ED;
+    box-shadow: 3px 3px 4px black;
+    border-radius: 5px;
+}
+
+section{
+    width: 750px;
+    height: 510px;
+    background-color: #5360ED;
+    margin: 5px auto auto 0px;
+    border: 5px solid #222761;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    background-color: #4680c7;
+    box-shadow: 3px 3px 4px black;
+    border-radius: 5px;
+}
+
+article{
+    width: 720px;
+    height: 237px;
+    border: 5px solid  #222761;
+    margin: 5px auto auto auto;
+    padding: 5px 0px 5px 5px;
+    background-color: #71aefa;
+    box-shadow: 3px 3px 4px black;
+    border-radius: 5px;   
+}
+
+aside {
+    border: 5px solid  #222761;
+    background-color: #71aefa;
+    width: 215px;
+    height: 520px;
+    margin: -538px 5px auto auto;
+    padding: 5px 0px 5px 5px;
+    box-shadow: 3px 3px 4px black;
+    text-align: center;
+    border-radius: 5px 30PX;
+}
+
+aside#interno {
+    width: 150px;
+    height: 220px;
+    margin: -138px 5px auto auto;
+    background-color: #a7ceff;
+}
+
+
+footer {
+    width: 1000px;
+    height: 40px;
+    background-color: #5360ED;
+    margin: 5px auto auto auto;
+    border: 5px solid #222761; /*width style color*/
+    padding: 0px 10px 25px 10px;
+    text-align: center;
+    box-shadow: 3px 3px 4px black;
+    border-radius: 5px;
+}

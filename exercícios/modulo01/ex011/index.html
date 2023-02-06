@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../ex010/favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminu o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <h2>Música</h2>
+    <audio src="midia/happy-mistake.mp3" controls autoplay></audio>
+    <!--MP3 WAV OGG esses são os formatos compatíveis-->
+    <h2>Nerdcast-211-programador</h2>
+    <audio preload="metadata" autoplay controls loop> <!-- o atributo do preload 'auto' é padrão, cuidado,  o site só é considerado carregado depois do áudio carregar-->
+        <source src="midia/Nerdcast-211-programador.mp3" type="audio/mpeg">
+        <source src="midia/Nerdcast-211-programador.ogg" type="audio/ogg">
+        <source src="midia/Nerdcast-211-programador.wav" type="audio/wav">
+        <!--O navegador tentará reproduzir na ordem, caso ele não consiga ele vai para o próximo-->
+        <p>Infelizmente o seu navegador não consegue reproduzir áudio. <a href="midia/Nerdcast-211-programador.mp3"> Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+
+    <!--Formatos de video aceito MP4,M4V,OGV,WEBM-->
+
+</body>
+</html>

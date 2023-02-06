@@ -1,0 +1,9 @@
+ctrl + p = procurar arquivos
+ctrl + p (digite@) = mostra todos os elementos de programação que tem em um elemento, se colocar @: (:) ele organiza os elementos por tipo
+ctrl + shift + l = seleciona um mesmo elemento em todos os lacais que foi mencionado, criando um multi cursor, parecido com segurar alt
+ao colocar um . (ponto) = a frente de um elemento, é mostrado todas as opções disponiveis, ao utilizar ctrl + espaço, traz um help junto
+ctrl + ] = cria uma janela com o código em que foi apertado o comando
+Alt + seta = movimenta algo selecionado
+Alt + seta + shift = clona um código na direção de seta (cima ou baixo)
+ctrl + ' (aspas simples) = abre o terminal integrado
+ctrl + d = acesso ao debuger
