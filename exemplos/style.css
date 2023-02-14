@@ -26,8 +26,8 @@ a:hover {
 }
 
 header {
-    background: black url(imagens/cactus-metade.png) left top no-repeat;
-    background-size: contain;
+    background: black url(imagens/fundo-header-p.png) left top no-repeat;
+    background-size: cover;
 
     color: white;
     text-align: center;
@@ -59,12 +59,13 @@ section {
 section > p {
     margin-bottom: 20px;
     font-family: var(--fonte03);
-    font-size: 3vh;
+    font-size: 5vh;
 }
 
 section#img01{
-    background: black url(imagens/background001.jpg) right center no-repeat fixed;
+    background: black url(imagens/fundotexto.jpg) right center no-repeat fixed;
     background-size: cover;
+    background-position: right bottom;
 
     /* background: cor image posição repetição attachment  lembrar do size*/
 }
@@ -73,13 +74,13 @@ p.imgfundo {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding-left: 5px;
-    width: 36vh;
+    width: 60vh;
     text-shadow: 1px 1px 1px black;
     margin-top: 20px;
 }
 
 section#img02{
-    background: black url(imagens/background002.jpg) right center no-repeat fixed;
+    background: black url(imagens/fundotexto.jpg) right center no-repeat fixed;
     background-size: cover;
 }
 
