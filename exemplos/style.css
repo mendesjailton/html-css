@@ -26,10 +26,13 @@ a:hover {
 }
 
 header {
-    background-color: black;
+    background: black url(imagens/cactus-metade.png) left top no-repeat;
+    background-size: contain;
+
     color: white;
     text-align: center;
     padding-top: 50px;
+    text-shadow: 1px 1px 1px black;
 }
 
 header > h1 {
