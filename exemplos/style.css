@@ -46,7 +46,7 @@ header > p {
 }
 
 body {
-    background-color: #f5f5dc;
+    background-color: #fef8f2;
     font-family: var(--fonte01);
 }
 
@@ -62,25 +62,44 @@ section > p {
     font-size: 5vh;
 }
 
-section#img01{
-    background: black url(imagens/fundotexto.jpg) right center no-repeat fixed;
-    background-size: cover;
-    background-position: right bottom;
+div#img01{
+    background: #fef8f2 url(imagens/fundotexto.jpg) right center no-repeat fixed;
+    background-position: 85% 100%;
+    background-size: contain;
+    width: 34.5vw;
+    height: 67.3vh;
+    border: 2px solid black ;
+    margin-left: 51.05vw;
+    margin-top: -71vh;
 
     /* background: cor image posição repetição attachment  lembrar do size*/
+/* 
+    position:absolute
+    position:relative */
 }
 
 p.imgfundo {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding-left: 5px;
-    width: 60vh;
-    text-shadow: 1px 1px 1px black;
+    background: rgba(0, 0, 0, 0) url(imagens/panfleto-p.jpg) left top no-repeat scroll;
+    background-size: contain;
+    color: rgb(0, 0, 0);
+    padding-left: 3vw;
+    padding-top: 15px;
+    min-width: 45vw;
+    height: 70vh;
     margin-top: 20px;
 }
 
+#cactus {
+    background:#fef8f2 url(imagens/quadro-p.png) left top no-repeat scroll;
+    background-size: contain;
+    width: 37vw;
+    height: 73vh;
+    margin-left: 50vw;
+    margin-top: -75.5vh;
+}
+
 section#img02{
-    background: black url(imagens/fundotexto.jpg) right center no-repeat fixed;
+    background: black url(imagens/background001.jpg) right center no-repeat fixed;
     background-size: cover;
 }
 
