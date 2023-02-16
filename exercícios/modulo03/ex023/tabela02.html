@@ -13,6 +13,15 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: lightgray;
+            padding: 10px;
+            border: 1px solid black;
         }
 
         td, th {
@@ -23,6 +32,21 @@
         thead, tfoot {
             background-color: grey;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        /* Valores de :nth-child() (pseudo-elemento)
+        odd = ímpar 
+        even = par 
+        2n = de duas em duas 
+        2n-1 = muda a ordem de inicio */
+        tbody tr:nth-child(2n) {
+            background-color: rgba(211, 211, 211, 0.418);
         }
 
         .num {
@@ -36,6 +60,7 @@
     <!-- ANATOMIA PARA TABELAS GRANDES -->
     <!-- 
         TABLE
+            CAPTION = É como se fosse uma legenda, mas fica em cima, como um título
             THEAD
                 TR,TD,TH   th= célula do cabeçalho de uma tabela
             TBODY
@@ -44,10 +69,11 @@
                 TR,TD,TH
      -->
      <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -149,7 +175,7 @@
             </tr>
         </tbody>
         <tfoot>
-            <th>Total de habitantes</th>
+            <th scope="row">Total de habitantes</th>
             <td class="num"><strong>210.147.125</strong></td>
         </tfoot>
      </table>
