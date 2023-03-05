@@ -2,11 +2,14 @@
 
 .grid-container {
     display: grid;
+    height: 90vh;
     grid-template-columns: auto auto auto;
+    grid-template-rows: 20% 10% 10% 20%;
     border: 2px solid black;
     padding: 10px;
-    column-gap: 50px;
+    column-gap: 25px;
     row-gap: 25px;
+
 }
 
 .grid-item {
@@ -21,9 +24,13 @@
     grid-column-end: 4;
 }
 
-#item-7 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 5;
+#item-2 {
+    grid-area: 2 / 1 / span 2 / span 3;
 }
+
+
+
+    /* HORIZONTAL */
+    /* justify-content: center; */
+    /* VERTICAL */
+    /* align-items: center;
