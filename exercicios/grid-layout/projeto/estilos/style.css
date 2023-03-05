@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+#grid-container {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    background-color: bisque;
+    /* gap: 15px; */
+    grid-template-areas: 
+    'header header header'
+    'menu-nav menu-nav menu-nav'
+    'menu-left principal lateral'
+    'rodape rodape rodape';
+}
+
+#header {
+    grid-area: header;
+    background-color: rgb(151, 151, 252);
+    text-align: center;
+    padding: 20px;
+}
+
+#menu-nav {
+    grid-area: menu-nav;
+    border: 1px solid black;
+    height: 30px;
+    padding: 5px;
+}
+
+#menu-nav ul > li{
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+#menu-left {
+    grid-area: menu-left;
+    width: 200px;
+    border: 1px solid black;
+    height: 750px;
+}
+
+#principal {
+    grid-area: principal;
+    border: 1px solid black;
+    width: 60vw;
+    height: 750px;
+}
+
+#lateral {
+    grid-area: lateral;
+    border: 1px solid black;
+    width: 25vw;
+    height: 750px;
+}
+
+
+#rodape {
+    grid-area: rodape;
+    text-align: center;
+    border: 1px solid black;
+    padding-top: 10px;
+    height: 40px;
+
+}
+
