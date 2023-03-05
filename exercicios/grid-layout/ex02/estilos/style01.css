@@ -1,1 +1,29 @@
 @charset "UTF-8";
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border: 2px solid black;
+    padding: 10px;
+    column-gap: 50px;
+    row-gap: 25px;
+}
+
+.grid-item {
+    border: 1px solid blue;
+    background-color: aqua;
+    padding: 20px;
+    text-align: center;
+}
+
+#item-1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#item-7 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
