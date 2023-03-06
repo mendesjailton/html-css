@@ -8,7 +8,7 @@
 
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 body, html {
@@ -46,17 +46,17 @@ body, html {
     display: inline-block;
     text-decoration: none;
     margin-right: 15px;
-    background-color: white;
+    background-color: rgb(226, 160, 80);
     padding: 10px;
     border-radius: 5px;
 }
 
-#menu-nav > ul > li:hover {
-    background-color: rgb(228, 152, 60);
-    font-weight: bold;
-    cursor: pointer;
+#menu-nav ul > li:hover {
+    background-color: rgb(180, 128, 229);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.521);
+    transition: transform 0.2s;
 }
-
 
 #menu-left {
     grid-area: menu-left;
@@ -70,6 +70,7 @@ body, html {
     margin: auto;
     text-align: center;
     border: 1px solid black;
+
 }
 
 #principal {
