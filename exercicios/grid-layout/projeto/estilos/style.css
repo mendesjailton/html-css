@@ -8,7 +8,7 @@
 
 a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 body, html {
@@ -38,23 +38,29 @@ body, html {
 
 #menu-nav {
     grid-area: menu-nav;
-    height: 30px;
+    /* height: 30px; */
     padding: 5px;
 }
 
 #menu-nav ul > li{
     display: inline-block;
-    text-decoration: none;
     margin-right: 15px;
-    background-color: rgb(226, 160, 80);
     padding: 10px;
+    background-color: rgb(226, 160, 80);
     border-radius: 5px;
+    border: 2px solid black;
+}
+
+#menu-nav ul > li > a {
+    text-decoration: none;
+    font-weight: bold;
 }
 
 #menu-nav ul > li:hover {
     background-color: rgb(180, 128, 229);
-    transform: translate(-3px, -3px);
+    border: 2px solid white;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.521);
+    transform: translate(2px, -2px);
     transition: transform 0.2s;
 }
 
@@ -62,22 +68,26 @@ body, html {
     grid-area: menu-left;
     width: 200px;
     border: 1px solid black;
-    height: 750px;
+    /* height: 600px; */
 }
 
 #menu-left ul > li {
-    padding: 43.5px;
+    padding: 20px;
     margin: auto;
     text-align: center;
     border: 1px solid black;
-
 }
+
+#img-um {
+    background-image: ;
+}
+
 
 #principal {
     grid-area: principal;
     border: 1px solid black;
     width: 60vw;
-    height: 750px;
+    /* height: 600px; */
 }
 
 #principal > section {
@@ -98,7 +108,7 @@ body, html {
 #lateral {
     grid-area: lateral;
     width: 400px;
-    height: 750px;
+    /* height: 600px; */
     padding: 10px;
 }
 
@@ -108,7 +118,6 @@ body, html {
     text-align: center;
     border: 1px solid black;
     padding-top: 10px;
-    height: 40px;
-
+    /* height: 40px; */
 }
 
