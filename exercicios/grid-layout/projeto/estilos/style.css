@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 body, html {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
@@ -33,7 +38,6 @@ body, html {
 
 #menu-nav {
     grid-area: menu-nav;
-    border: 1px solid black;
     height: 30px;
     padding: 5px;
 }
@@ -42,13 +46,30 @@ body, html {
     display: inline-block;
     text-decoration: none;
     margin-right: 15px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
 }
+
+#menu-nav > ul > li:hover {
+    background-color: rgb(228, 152, 60);
+    font-weight: bold;
+    cursor: pointer;
+}
+
 
 #menu-left {
     grid-area: menu-left;
     width: 200px;
     border: 1px solid black;
     height: 750px;
+}
+
+#menu-left ul > li {
+    padding: 43.5px;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
 }
 
 #principal {
@@ -58,11 +79,26 @@ body, html {
     height: 750px;
 }
 
+#principal > section {
+    min-width: 50%;
+    max-width: 70%;
+    height: 100%;
+    margin: auto;
+    padding: 10px;
+}
+
+.texto {
+    text-align: justify;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
 #lateral {
     grid-area: lateral;
-    border: 1px solid black;
-    width: 25vw;
+    width: 400px;
     height: 750px;
+    padding: 10px;
 }
 
 
