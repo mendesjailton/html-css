@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/* EStilo exemplo grid */
+
+
+.grid-container {
+    display: grid;
+    height: 90vh;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 20% 10% 10% 20%;
+    border: 2px solid black;
+    padding: 10px;
+    column-gap: 25px;
+    row-gap: 25px;
+}
+
+.grid-item {
+    border: 1px solid blue;
+    background-color: aqua;
+    padding: 20px;
+    text-align: center;
+}
+
+#item-1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#item-2 {
+    grid-area: 2 / 1 / span 2 / span 3;
+}
+
+#item-5 {
+ background: rgb(161, 161,255) url(../cien.jpg) no-repeat fixed;
+ background-size: 100% 100%;
+}
+
+    /* HORIZONTAL */
+    /* justify-content: center; */
+    /* VERTICAL */
+    /* align-items: center;
